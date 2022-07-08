@@ -1,8 +1,18 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #3356ca;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
 body {
   margin: 0;
-  font-family: victoria, serif;
-  background-image: url(https://www.google.com/search?q=barcelona+campeon&sxsrf=ALiCzsZqT2my3SnFEertdK_wr6dVzOwJEw:1657234141689&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjyv8yi7uf4AhWxfTABHaL9C5gQ_AUoAXoECAEQAw&biw=1366&bih=649&dpr=1#imgrc=fu53HpRFRY7ZOM);
-}
+  font-family: 'Quicksand', sans-serif;
+  }
 
 .login {
   width: 100%;
@@ -21,6 +31,7 @@ body {
   width: 150px;
   margin-bottom: 50px;
   justify-self: center;
+  
 }
 
 .form {
@@ -33,24 +44,26 @@ body {
 }
 
 .form a {
+  color: var(--hospital-green);
+  font-size: var(--sm);
   padding: 6px;
-  font-size: 14px;
   text-align: right;
   text-decoration: none;
   margin-bottom: 12px;
 }
 
 .label {
-  font-size: 18px;
+  font-size: var(--sm);
   font-weight: bold;
   margin: 4px;
 }
 
 .input {
+  background-color: var(--text-input-field);
   border: none;
   border-radius: 8px;
   height: 30ox;
-  font-size: 16px;
+  font-size: var(--md);
   padding: 6px;
   margin-bottom: 12px;
 }
@@ -60,19 +73,22 @@ body {
 }
 
 .primary-button {
-  background-color: aqua;
+  background-color: var(--hospital-green);
   border-radius: 8px;
   border: none;
+  color: var(--white);
   width: 100%;
   cursor: pointer;
-  font-size: 18px;
+  font-size: var(--md);
   font-weight: bold;
   height: 30px;
 }
 
 .secondary-button {
+  background-color: var(--white);
   border-radius: 8px;
-  border: 1ox solid #c7c7c7;
+  border: 1ox solid var(--hospital-green);
+  color: var(--hospital-green);
   width: 100%;
   cursor: pointer;
   font-size: 18px;
